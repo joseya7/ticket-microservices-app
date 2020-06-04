@@ -39,7 +39,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
-    - host: ticketing.dev
+    - host: pending.dev
       http:
         paths:
           - path: /api/payments/?(.*)
