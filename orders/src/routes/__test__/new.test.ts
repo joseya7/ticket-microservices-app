@@ -49,7 +49,7 @@ it('reserves a ticket', async () => {
     .post('/api/orders')
     .set('Cookie', global.signin())
     .send({ ticketId: ticket.id })
-    .expect(400)
+    .expect(201)
 })
 
 it('emits an order created event', async () => {
